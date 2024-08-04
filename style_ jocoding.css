@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f7f3e8;
+  color: #4a4a4a;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #6b5344;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#calendar {
+  margin-bottom: 20px;
+}
+
+.calendar-day {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.calendar-day.has-entry {
+  background-color: #a18e7a;
+  color: white;
+}
+
+form {
+  margin: 0 0 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #6b5344;
+  font-size: 16px;
+}
+
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1c4b1;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #a18e7a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8c7b6a;
+}
+
+.output, #saved-diary {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0ebe2;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+#saved-diary h2 {
+  color: #6b5344;
+  font-size: 20px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음 일기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>마음 일기</h1>
+        <div id="calendar"></div>
+        <form id="diary-form">
+            <label for="diary-date">날짜:</label>
+            <input type="date" id="diary-date" name="diary-date" required>
+            <label for="diary-entry">오늘의 마음을 적어주세요:</label>
+            <textarea id="diary-entry" name="diary-entry" rows="10" required></textarea>
+            <button type="submit">마음 읽기</button>
+        </form>
+        <div class="output"></div>
+        <div id="saved-diary"></div>
+    </main>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-functions-compat.js"></script>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
